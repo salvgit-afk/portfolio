@@ -1,0 +1,245 @@
+/* --------------------------------------------------
+   RESET
+-------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F5F7FA;
+    color: #121212;
+}
+
+/* --------------------------------------------------
+   HEADER
+-------------------------------------------------- */
+.header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* --------------------------------------------------
+   EFFETTO ANIMATO TITOLO
+-------------------------------------------------- */
+.titolo-animato, .sottotitolo-animato {
+    background: linear-gradient(90deg, #2701be, #9101ff, #6600ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim-colore 8s linear infinite;
+}
+
+@keyframes anim-colore {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    gap: 30px;
+    background: #11007a;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #a200ff;
+}
+
+/* --------------------------------------------------
+   SEZIONI BOXATE
+-------------------------------------------------- */
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-3px);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #11007a;
+}
+
+.section h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #11007a;
+}
+
+div {
+    background: #f0f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+/* --------------------------------------------------
+   JOB EXPERIENCE
+-------------------------------------------------- */
+.job {
+    background: #f0f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #11007a;
+}
+
+.job .date {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+   EDUCATION
+-------------------------------------------------- */
+.istruzione span {
+    display: block;
+    background: #11007a;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* --------------------------------------------------
+   SOFT SKILLS
+-------------------------------------------------- */
+#soft-skills .skills-grid {
+    display: block;
+    background: #f0f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* --------------------------------------------------
+   HARD SKILLS
+-------------------------------------------------- */
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #11007a;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* --------------------------------------------------
+   CERTIFICAZIONI
+-------------------------------------------------- */
+#certs ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* --------------------------------------------------
+   CONTACTS
+-------------------------------------------------- */
+
+#contact a {
+    color:#11007a;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #9101ff;
+}
+
+
+
+/* --------------------------------------------------
+   SOCIAL
+-------------------------------------------------- */
+#social {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+#social a {
+    color: #11007a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#social a:hover {
+    color: #a200ff;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #11007a;
+    color: white;
+}
