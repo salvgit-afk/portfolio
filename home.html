@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Salvatore Mannina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="functions.js" defer></script>
+</head>
 
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio - Salvatore Mannina</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <script src="functions.js" defer></script>
-    </head>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="work.html">Work</a>
+            <a href="skill.html">Skill</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
+    <section id="home" class="hero">
+        <h1 class="section-title">Software Developer</h1>
+        <h4 class="section-title">Salvatore Mannina</h4>
 
-    <body>
-        <header class="header">
-            <nav class="navbar">
-                <a href="home.html">Home</a>
-                <a href="education.html">Education</a>
-                <a href="work.html">Work</a>
-                <a href="skill.html">Skill</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+        <div class="hero-buttons">
+            <a class="btn-cv">Download CV</a>
+        </div>
+    </section>
 
-        <section id="home" class="hero">
-            <h1 class="titolo-animato">Software Developer</h1>
-            <h2 class="sottotitolo-animato">Salvatore Mannina</h2>
-            <p class="paragrafo-animato">Based in Trapani</p>
+    <section id="about" class="about">
+        <div class="section-row">
+            <h2 class="section-title">About me</h2>
 
-            <div class="hero-buttons">
-                <a class="btn-cv">Download CV</a>
-            </div>
-        </section>
+            <div class="about-content">
+                <img src="img/illustration.png" alt="profile" class="about-img">
 
-        <section id="about" class="about">
-            <div class="about-wrapper">
-                <img src="img/illustration.png" alt="profile">
-                <div class="about-text">
-                    <h2>About me</h2>
-                    <p> Il mio obiettivo è maturare esperienza come sviluppatore software nel settore della consulenza informatica,
+                <div class="card about-card">
+                    <p>
+                        Il mio obiettivo è maturare esperienza come sviluppatore software nel settore della consulenza informatica,
                         offrendo supporto ai clienti e contribuendo a un ambiente collaborativo e stimolante.
                         Sono aperto a nuove esperienze anche in settori diversi.
                     </p>
                 </div>
-            </div>
-        </section>
-    </body>
 
+            </div>
+
+        </div>
+    </section>
 
     <footer class="footer">
         <p>© 2025 — Portfolio di Salvatore Mannina</p>
     </footer>
+
+</body>
 </html>
