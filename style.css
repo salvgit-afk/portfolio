@@ -115,6 +115,7 @@ section {
     cursor: pointer;
     display: inline-block;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-cv:hover {
@@ -129,7 +130,7 @@ section {
     max-width: 1100px;
     margin: auto;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 40px;
 }
 
@@ -140,7 +141,7 @@ section {
 
 .section-content {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
     flex: 1;
 }
@@ -214,12 +215,24 @@ section {
 .about-content {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     flex: 1;
 }
 
+.about-content .card {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
 .about-img {
-    width: 180px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(150, 80, 255, 0.45);
+    border: 2px solid rgba(150, 80, 255, 0.35);
+    flex-shrink: 0;
 }
 
  /* -----------------------------------------------------
