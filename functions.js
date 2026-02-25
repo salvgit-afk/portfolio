@@ -1,6 +1,8 @@
-/* CARD */
+ /* -----------------------------------------------------
+/                      CARD                            /
+-----------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".about-card");
+    const cards = document.querySelectorAll(".card");
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -12,21 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cards.forEach(card => {
         observer.observe(card);
-    });
-});
-
-
-/* NAVBAR */
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".navbar a");
-
-    links.forEach(link => {
-        link.addEventListener("mouseenter", () => {
-            link.style.letterSpacing = "1.5px";
-        });
-
-        link.addEventListener("mouseleave", () => {
-            link.style.letterSpacing = "0.5px";
-        });
     });
 });
