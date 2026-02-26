@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(card);
     });
 });
+
+ /* -----------------------------------------------------
+/              NAVBAR ACTIVE STATE                     /
+-----------------------------------------------------*/
+const navLinks = document.querySelectorAll(".navbar a");
+const currentPage = window.location.pathname.split("/").pop();
+
+navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+        link.classList.add("active");
+    }
+});
