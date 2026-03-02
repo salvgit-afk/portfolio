@@ -266,7 +266,7 @@ section {
 }
 
  /* =====================================================
-/                  SEZIONI SPECIFICHE                  /
+/                  SEZIONI SPECIFICHE                   /
 ===================================================== */
 
  /* -----------------------------------------------------
@@ -291,9 +291,11 @@ section {
  /* -----------------------------------------------------
 /                      EDUCATION                       /
 -----------------------------------------------------*/
-/* -----------------------------------------------------
-/                      EDUCATION                       /
------------------------------------------------------*/
+.education-content .card:first-child {
+    justify-content: center;
+    gap: 16px;
+}
+
 .education-list li {
     display: flex;
     align-items: center;
@@ -322,17 +324,16 @@ section {
 }
 
 .cert-category {
-    font-size: 0.9rem;
-    font-weight: 600;
+    background: linear-gradient(90deg, rgba(108, 99, 255, 0.2), transparent) !important;
+    border: none !important;
+    border-left: 3px solid #9101ff !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
     color: #b48cff !important;
-    border-bottom: 1px solid rgba(150, 80, 255, 0.25);
-    padding: 10px 0 8px 0 !important;
-    margin-top: 8px;
-    background: none !important;
-    border-radius: 0 !important;
-    gap: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
     letter-spacing: 0.5px;
-    text-transform: none;
+    margin-bottom: 4px;
 }
 
 .cert-category:first-child {
@@ -355,14 +356,48 @@ section {
 }
 
  /* -----------------------------------------------------
+/                      PROJECT1&2                      /
+-----------------------------------------------------*/
+.project1-list ul,
+.project2-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.project1-list li,
+.project2-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project1-list .fa-li,
+.project2-list .fa-li {
+    color: #4101d4;
+}
+
+.project1-list li:hover,
+.project2-list li:hover {
+    transform: translateX(5px);
+}
+
+.project1-list li:hover::before,
+.project2-list li:hover::before {
+    color: rgb(rgb(179, 0, 255));
+}
+
+ /* -----------------------------------------------------
 /                      SKILL                           /
 -----------------------------------------------------*/
-/* nessuno stile specifico al momento */
 
  /* -----------------------------------------------------
 /                      CONTACT                         /
 -----------------------------------------------------*/
-/* nessuno stile specifico al momento */
 
  /* =====================================================
 /                  RESPONSIVE                           /
