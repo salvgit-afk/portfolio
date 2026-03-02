@@ -29,3 +29,9 @@ navLinks.forEach(link => {
         link.classList.add("active");
     }
 });
+
+/* -----------------------------------------------------
+/        FOOTER CHE SI AGGIORNA AUTOMATICAMENTE        /
+-----------------------------------------------------*/
+const year = new Date().getFullYear();
+document.getElementById('footer').innerHTML = `© ${year} — Portfolio di Salvatore Mannina`;
