@@ -222,7 +222,7 @@ section {
 
 .card ul li i {
     margin-right: 8px;
-    color: #b48cff;
+    color: #a430fd;
 }
 
  /* -----------------------------------------------------
@@ -253,6 +253,12 @@ section {
 .education-list li:hover {
     background: rgba(150, 80, 255, 0.25);
     transform: translateY(-2px);
+}
+
+.skill-list li:hover i,
+.education-list li:hover i {
+    color: #e0aaff;
+    filter: drop-shadow(0 0 6px #9101ff);
 }
 
  /* -----------------------------------------------------
@@ -313,7 +319,7 @@ section {
 
 .cert-title {
     flex: 1;
-    font-weight: 600;
+    font-weight: 500;
     color: #e6e0ff;
 }
 
@@ -330,8 +336,8 @@ section {
     border-radius: 6px !important;
     padding: 8px 12px !important;
     color: #b48cff !important;
-    font-weight: 600;
-    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 3rem;
     letter-spacing: 0.5px;
     margin-bottom: 4px;
 }
@@ -339,6 +345,10 @@ section {
 .cert-category:first-child {
     padding-top: 0 !important;
     margin-top: 0;
+}
+
+.education-list li:not(.cert-category) {
+    margin-left: 16px;
 }
 
  /* -----------------------------------------------------
@@ -374,11 +384,7 @@ section {
     margin: 10px 0;
     text-align: left;
     transition: 0.3s;
-}
-
-.project1-list .fa-li,
-.project2-list .fa-li {
-    color: #4101d4;
+    color: #b48cff;
 }
 
 .project1-list li:hover,
@@ -386,9 +392,10 @@ section {
     transform: translateX(5px);
 }
 
-.project1-list li:hover::before,
-.project2-list li:hover::before {
-    color: rgb(rgb(179, 0, 255));
+.project1-list li:hover i,
+.project2-list li:hover i {
+    color: #e0aaff;
+    filter: drop-shadow(0 0 6px #9101ff);
 }
 
  /* -----------------------------------------------------
