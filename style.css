@@ -87,11 +87,10 @@ section {
 }
 
 .nav-secondaria {
-    margin: 10px;
+    margin: 8px;
     border-top: 1px solid rgba(150, 80, 255, 0.15);
-    padding-top: 20px;
-    padding-left: 90px;
-    width: 70%;
+    padding-top: 12px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -106,7 +105,7 @@ section {
 -----------------------------------------------------*/
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 70px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,7 +189,8 @@ section {
 /                      CARD                            /
 -----------------------------------------------------*/
 .card {
-    padding: 35px;
+    padding: 20px 35px 35px 35px;
+    gap: 0;
     background: rgba(17, 22, 61, 0.85);
     border-radius: 18px;
     box-shadow: 0 0 25px rgba(108, 99, 255, 0.35);
@@ -200,8 +200,7 @@ section {
     min-height: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: flex-start;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease-out;
@@ -218,13 +217,28 @@ section {
 }
 
 .card-title {
-    font-size: 1.6rem;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
     background: linear-gradient(90deg, #2701be, #9101ff, #6600ff, #9101ff, #2701be);
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: anim-colore 10s linear infinite;
     border-bottom: 1px solid rgba(150, 80, 255, 0.15);
+}
+
+.card-title b {
+    font-size: 1.4rem;
+}
+
+.card-title i {
+    font-size: 0.85rem;
+    margin-left: 6px;
+}
+
+.card-content {
+    margin-top: 16px;
 }
 
 .card p {
@@ -298,8 +312,6 @@ section {
 -----------------------------------------------------*/
 .education-content .card {
     justify-content: flex-start;
-    gap: 16px;
-    padding-top: 20px;
 }
 
 .education-list {
@@ -349,7 +361,7 @@ section {
 }
 
 .cert-ente i {
-    font-size: 0.85rem;
+    font-size: 0.75rem !important;
     color: #7a6aaa;
     white-space: nowrap;
 }
@@ -380,13 +392,15 @@ section {
 /                      WORK                            /
 -----------------------------------------------------*/
 .work-content a {
+    display: flex;
+    align-items: stretch;
     text-decoration: none;
     color: inherit;
     flex: 1;
-    display: flex;
 }
 
 .work-content .card {
+    justify-content: flex-start;
     min-height: 160px;
 }
 
@@ -426,11 +440,6 @@ section {
  /* -----------------------------------------------------
 /                      SKILL                           /
 -----------------------------------------------------*/
-
-.card-content {
-    padding-top: 2px;
-}
-
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -461,7 +470,12 @@ section {
 }
  /* -----------------------------------------------------
 /                      CONTACT                         /
------------------------------------------------------*/
+-----------------------------------------------------*/ù
+.contact-content .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
  /* =====================================================
 /                  RESPONSIVE                           /
