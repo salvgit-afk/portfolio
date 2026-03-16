@@ -49,9 +49,70 @@ section {
 /                      NAVBAR                          /
 -----------------------------------------------------*/
 .header {
-    padding: 20px 40px;
     display: flex;
     justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(150, 80, 255, 0.15);
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-project {
+    border-bottom: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-principale {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: 1px solid rgba(150, 80, 255, 0.15);
+}
+
+.nav-secondaria {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 12px 0;
+}
+
+.nav-next {
+    margin-left: auto;
+}
+
+.nav-arrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-text-fill-color: #b48cff;
+    background: linear-gradient(90deg, #9101ff, #ffffff);
+    -webkit-background-clip: text;
+    transition: all 0.3s;
+}
+
+.nav-arrow:hover {
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 0 0 8px #9101ff;
+    filter: brightness(1.2);
+}
+
+.nav-arrow i {
+    -webkit-text-fill-color: #b48cff;
+    transition: 0.3s;
+}
+
+.nav-arrow:hover i {
+    -webkit-text-fill-color: #ffffff;
+    filter: drop-shadow(0 0 6px #9101ff);
 }
 
 .navbar a {
@@ -79,25 +140,6 @@ section {
     text-shadow: 0 0 10px #9101ff;
     border-bottom: 2px solid #9101ff;
     padding-bottom: 2px;
-}
-
-.header-project {
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-secondaria {
-    margin: 8px;
-    border-top: 1px solid rgba(150, 80, 255, 0.15);
-    padding-top: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-secondaria .navbar a {
-    font-size: 0.9rem;
-    opacity: 0.75;
 }
 
  /* -----------------------------------------------------
@@ -518,8 +560,19 @@ section {
         font-size: 1rem;
     }
 
+    .header {
+        padding: 12px 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
     .navbar a {
-        margin: 0 10px;
-        font-size: 0.9rem;
+        margin: 0 6px;
+        font-size: 0.85rem;
     }
 }
