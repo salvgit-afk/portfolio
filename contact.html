@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="it">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Portfolio - Salvatore Mannina">
-        <meta property="og:description" content="Software Developer — Scopri i miei progetti e le mie competenze.">
-        <meta property="og:type" content="website">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <script src="functions.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="img/flaticon-portfolio.png">
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portfolio - Salvatore Mannina">
+    <meta property="og:description" content="Software Developer — Scopri i miei progetti e le mie competenze.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="functions.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="img/flaticon-portfolio.png">
+</head>
 
 <body>
+
     <header class="header">
-        <nav class="navbar">
+        <button class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar" id="navbar">
             <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="work.html">Work</a>
@@ -25,6 +28,7 @@
         </nav>
     </header>
 
+    <div class="nav-overlay" id="nav-overlay"></div>
 
     <section id="contact" class="section">
         <div class="section-row">

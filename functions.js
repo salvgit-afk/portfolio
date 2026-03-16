@@ -31,6 +31,45 @@ navLinks.forEach(link => {
 });
 
  /* -----------------------------------------------------
+/                      HAMBURGER MENU                  /
+-----------------------------------------------------*/
+const hamburger = document.getElementById("hamburger");
+const navbar = document.getElementById("navbar");
+const overlay = document.getElementById("nav-overlay");
+
+if (hamburger && navbar) {
+    hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+        overlay.classList.toggle("open");
+        hamburger.classList.toggle("open");
+        const icon = hamburger.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+    });
+
+    overlay.addEventListener("click", () => {
+        navbar.classList.remove("open");
+        overlay.classList.remove("open");
+        hamburger.classList.remove("open");
+        const icon = hamburger.querySelector("i");
+        icon.classList.add("fa-bars");
+        icon.classList.remove("fa-xmark");
+    });
+
+    const menuLinks = document.querySelectorAll(".navbar a");
+    menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("open");
+            overlay.classList.remove("open");
+            hamburger.classList.remove("open");
+            const icon = hamburger.querySelector("i");
+            icon.classList.add("fa-bars");
+            icon.classList.remove("fa-xmark");
+        });
+    });
+}
+
+ /* -----------------------------------------------------
 /        FOOTER CHE SI AGGIORNA AUTOMATICAMENTE        /
 -----------------------------------------------------*/
 const year = new Date().getFullYear();
