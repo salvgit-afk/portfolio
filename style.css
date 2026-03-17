@@ -53,6 +53,10 @@ section {
     justify-content: center;
 }
 
+.header-title {
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -579,6 +583,26 @@ section {
         min-height: 56px;
     }
 
+    .header-title {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #2701be, #9101ff, #6600ff, #9101ff, #2701be);
+        background-size: 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: anim-colore 10s linear infinite;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
@@ -665,7 +689,17 @@ section {
 
     .project-switcher {
         width: 100%;
-        padding: 10px 20px;
+        padding: 8px 20px;
+        margin: 0;
+        border-bottom: 1px solid rgba(150, 80, 255, 0.15);
+        justify-content: space-between;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    .nav-next {
+        margin-left: auto;
+        text-align: right;
     }
 
     .card {
