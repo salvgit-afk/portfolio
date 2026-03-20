@@ -1,0 +1,56 @@
+ /* -----------------------------------------------------
+/                      RESET                           /
+-----------------------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f2a;
+    color: #f0f0f0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+ /* -----------------------------------------------------
+/                      TITOLI ANIMATI                  /
+-----------------------------------------------------*/
+.section-title,
+.hero-title {
+    background: linear-gradient(90deg, #2701be, #9101ff, #6600ff, #9101ff, #2701be);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim-colore 10s linear infinite;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+@keyframes anim-colore {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+ /* -----------------------------------------------------
+/                      FOOTER                          /
+-----------------------------------------------------*/
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0.6;
+    color: #6c63ff;
+}

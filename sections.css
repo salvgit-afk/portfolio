@@ -1,0 +1,189 @@
+ /* -----------------------------------------------------
+/                      ABOUT                           /
+-----------------------------------------------------*/
+.about-content .card {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(150, 80, 255, 0.45);
+    border: 2px solid rgba(150, 80, 255, 0.35);
+    flex-shrink: 0;
+}
+
+ /* -----------------------------------------------------
+/                      EDUCATION                       /
+-----------------------------------------------------*/
+.education-content .card {
+    justify-content: flex-start;
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.education-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    background: rgba(108, 99, 255, 0.15);
+    border: 1px solid rgba(150, 80, 255, 0.35);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #e6e0ff;
+    backdrop-filter: blur(4px);
+    transition: 0.3s;
+}
+
+.education-list li:hover {
+    background: rgba(150, 80, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.education-list li i {
+    font-size: 1.1rem;
+    color: #b48cff;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.education-list li:hover i {
+    color: #e0aaff;
+    filter: drop-shadow(0 0 6px #9101ff);
+}
+
+.cert-title {
+    flex: 1;
+    font-weight: 500;
+    color: #e6e0ff;
+}
+
+.cert-ente i {
+    font-size: 0.75rem !important;
+    color: #7a6aaa;
+    white-space: nowrap;
+}
+
+.cert-category {
+    background: linear-gradient(90deg, rgba(108, 99, 255, 0.2), transparent) !important;
+    border: none !important;
+    border-left: 3px solid #9101ff !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    color: #b48cff !important;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.cert-category:first-child {
+    padding-top: 0 !important;
+    margin-top: 0;
+}
+
+.education-list li:not(.cert-category) {
+    margin-left: 16px;
+}
+
+ /* -----------------------------------------------------
+/                      WORK                            /
+-----------------------------------------------------*/
+.work-content a {
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+}
+
+.work-content .card {
+    justify-content: flex-start;
+    min-height: 160px;
+}
+
+ /* -----------------------------------------------------
+/                      PROJECT1&2                      /
+-----------------------------------------------------*/
+.project1-list ul,
+.project2-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.project1-list li,
+.project2-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+    text-align: left;
+    transition: 0.3s;
+    color: #b48cff;
+}
+
+.project1-list li:hover,
+.project2-list li:hover {
+    transform: translateX(5px);
+}
+
+.project1-list li:hover i,
+.project2-list li:hover i {
+    color: #e0aaff;
+    filter: drop-shadow(0 0 6px #9101ff);
+}
+
+ /* -----------------------------------------------------
+/                      SKILL                           /
+-----------------------------------------------------*/
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-list li {
+    padding: 6px 10px;
+    background: rgba(108, 99, 255, 0.15);
+    border: 1px solid rgba(150, 80, 255, 0.35);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #e6e0ff;
+    backdrop-filter: blur(4px);
+    transition: 0.3s;
+}
+
+.skill-list li:hover {
+    background: rgba(150, 80, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.skill-list li:hover i {
+    color: #e0aaff;
+    filter: drop-shadow(0 0 6px #9101ff);
+}
+
+ /* -----------------------------------------------------
+/                      CONTACT                         /
+-----------------------------------------------------*/
+.contact-content .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
